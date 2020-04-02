@@ -1,7 +1,7 @@
 <!-- <p>quote-form works!</p> -->
 <div class="container-fluid">
-    <h2>Do you have a <strong>Fav</strong> quote?</h2>
-    <p>Quote it using the form!</p>
+    <h2> Having a <strong>Fav</strong> quote?</h2>
+    <p>Fill it in the form!</p>
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         <div class="form-group">
 
@@ -35,7 +35,7 @@
                     </div>
                     <div class="form-group">
 
-                            <label for="Creation Date">Completion</label>
+                            <label for="Creation Date">Date published</label>
                             <input type='date' id="publish" [(ngModel)]="newQuote.publishDate" name="publishDate" #publishDate="ngModel" required>
                             <div [hidden]="publishDate.valid || publishDate.pristine" class="alert alert-danger">
                               <p>Date is required</p>

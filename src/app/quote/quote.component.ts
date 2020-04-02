@@ -13,7 +13,7 @@ export class QuoteComponent implements OnInit {
    new Quote ('Tony Bracks',
    'If you judge people, you have no time to love them.',
     'Eugene', 'Spread love everywhere you go. Let no one ever come to you without leaving happier.', 0, 0, new Date(2020, 11, 12)),
-    new Quote ('Plato'
+    new Quote ('Plato vans'
     , 'The greatest wealth is to live content with little.',
      'Iregi',
       'There are two things a person should never be angry at, what they can help, and what they cannot.', 0, 0, new Date(2020, 11, 12)),
@@ -34,8 +34,8 @@ export class QuoteComponent implements OnInit {
 
   addNewQuote(quote) {
  const quoteLength = this.quotes.length;
-  quote.publishDate = new Date(quote.publishDate);
-  this.quotes.push(quote);
+ quote.publishDate = new Date(quote.publishDate);
+ this.quotes.push(quote);
   }
 
   deleteQuote(isRead, index) {
